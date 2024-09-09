@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: 300px;
+            animation-name: rotatediv;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            animation-direction: alternate;
+        }
+        @keyframes rotatediv{
+            10%{
+                border-radius: 20px;
+                transform: translateY(30px)rotate(30deg);
+                transition: all 4s linear 0;
+            }
+            50%{
+                border-radius: 50%;
+                transform: rotate(360deg);
+
+            }
+            90%{
+                border-radius: 50px;
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Animation</h1></div>
+</body>
+</html>
